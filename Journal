@@ -1,0 +1,58 @@
+convert jsonString to array and its dictionaries...
+
+June 30, 2013
+
+1. trying to figure out how to call points fetching method after the user fetching method via native methods instead of ASIHTTP...
+2. Using SO:http://stackoverflow.com/questions/17416683/how-do-i-return-a-value-from-a-helper-class-to-a-view-controller/17416915?noredirect=1#17416915 to fetch usersArray
+3. parsing usersArray into tableview cells...
+
+CONVERT TO www Treasure Hunt
+
+1. PlayersVC --> PlayerCluesVC (Found & Added) --> PlayerDetailsVC
+
+2. MapVC --> Left & Right Bar Buttons
+
+Left --> NewClueFoundVC (What, Where, When, Image) - - - Bring in NewMapViewController && || NewClueViewController
+Right --> AddANewClueVC (What, Where, When, Image)
+
+3. Instructions
+
+Feb 21 2014
+
+1.  Converted TagListController to one fetching tags found=1 (should be found=0)
+2.  Modified database tag table to include tinyint with 1 or 0
+3.  Copied readtags2 to getundiscoveredtags.php and modified to only list tags with found=1 (for now)
+4.  Modified vDL of TagListController to fetch getundiscoveredtags.php
+5.  Modified SantiappsHelper to implement new method to fetchUndiscoveredTags:(Handler4)handler
+6.  ...Test...
+7.  If user selects, open tag, request proof and mark it as PENDING REVIEW...
+
+7. #PENDING in MapViewController - upload new tag & upload photo & update database & notify users(via >app< or email?)
+
+db-iglobe.
+
+.tags
+-country
+-date
+-destintyudid
+-found
+-latitude
+-longitude
+-originudid
+-points
+-tagID
+-username
+-tagID-INDEX
+
+.users
+-address1,2
+-city,country
+-email,firstname
+-id,lastname
+-password,password_hint
+-permissions,phone
+-state,time_queued
+-time_sent,udid
+-url,userCreated
+-username,zip
+-PRIMARY-INDEX
